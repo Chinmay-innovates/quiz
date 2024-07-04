@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,8 +7,17 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  background: #68d3e9;
+  background: var(--primary-color);
   overflow-y: hidden;
+}
+:root {
+  --primary-color: #68d3e9;
+  --header-color: #0000ffa1;
+  --white-color: #fff;
+  --white-color-70: rgba(255, 255, 255, 0.7);
+  --blue-color: blue;
+  --blue-hover: #0C4FC0;
+  --text-color: #2268A0;
 }
 /* INDEX.HTML */
 section {
@@ -25,11 +36,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0000ffa1;
+  background: var(--header-color);
 }
 header .logo {
   position: relative;
-  color: #fff;
+  color: var(--white-color);
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -38,7 +49,7 @@ header .logo {
 }
 /* header nav elements */
 header .nav a {
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
   font-size: 20px;
   font-weight: 800;
@@ -53,7 +64,7 @@ header .nav a:not(:last-child) {
 }
 header .nav a:hover {
   cursor: pointer;
-  background: #fff;
+  background: var(--white-color);
   color: #000;
 }
 .content {
@@ -62,7 +73,7 @@ header .nav a:hover {
   margin: 60px 100px;
 }
 .content .info h1 {
-  color: #2268A0;
+  color: #2268a0;
   font-size: 55px;
   text-transform: uppercase;
   font-weight: 800;
@@ -71,7 +82,7 @@ header .nav a:hover {
   margin-bottom: 30px;
 }
 .content .info h1 span {
-  color: #fff;
+  color: var(--white-color);
   font-size: 50px;
   font-weight: 600px;
   margin-bottom: 40px;
@@ -85,8 +96,8 @@ header .nav a:hover {
   right: 150px;
 }
 .content .quiz-btn {
-  color: #fff;
-  background: #2268A0;
+  color: var(--white-color);
+  background: var(--text-color);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -98,7 +109,7 @@ header .nav a:hover {
   transition-property: background;
 }
 .content .quiz-btn:hover {
-  background: #0c4fc0;
+  background: var(--blue-hover);
 }
 /* image */
 img {
@@ -108,14 +119,14 @@ img {
 }
 .copy-right {
   position: absolute;
-  color: blue;
+  color: var(--blue-color);
   bottom: 0px;
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--white-color-70);
 }
 /* footer */
 footer {
@@ -127,4 +138,3 @@ footer {
   height: 100px;
   width: 100px;
 }
-
